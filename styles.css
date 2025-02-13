@@ -29,6 +29,7 @@ html, body {
     color: var(--text-color);
     display: flex;
     flex-direction: column;
+    justify-content: space-between; /* Push footer to the bottom */
 }
 
 /* Container for all content */
@@ -56,4 +57,33 @@ header {
 }
 
 header h1 {
-    font-size:
+    font-size: var(--header-font-size);
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: var(--subheader-font-size);
+    color: #666;
+}
+
+/* Links Section */
+.links {
+    width: 100%;
+    max-width: 400px; /* Limit width for better alignment */
+    margin-top: 20px;
+}
+
+.links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--link-color);
+    background-color: var(--link-bg-color);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 12px 0;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%; /* Make sure the button takes full width */
+   
