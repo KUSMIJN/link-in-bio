@@ -1,12 +1,11 @@
 /* Define variables for easy customization */
 :root {
-    --background-color: #000000; /* Page background color */
-    --text-color: #333; /* Main text color */
-    --link-color: #007bff; /* Link color */
-    --link-hover-color: #ffffff; /* Link hover text color */
-    --link-bg-color: #60042b; /* Link background color */
-    --link-hover-bg-color: #000000; /* Link hover background color */
-    --footer-background-color: #000000; /* Footer background color */
+    --background-color: #000000; /* Black background */
+    --text-color: #f3e9ed; /* All text color */
+    --link-color: #f3e9ed; /* Link text color */
+    --link-bg-color: #60042b; /* Button color */
+    --link-hover-bg-color: #000000; /* Button hover background color (black) */
+    --footer-background-color: #333; /* Footer background color */
     --footer-text-color: #fff; /* Footer text color */
     --footer-font-size: 14px; /* Footer text size */
     --header-font-size: 36px; /* Header text size */
@@ -19,86 +18,5 @@ html, body {
     height: 100%; /* Makes sure the body takes full screen height */
     margin: 0; /* Remove default margin */
     font-family: Arial, sans-serif; /* Set a clean font */
-    background-color: var(--background-color); /* Apply background color */
-    color: var(--text-color); /* Apply text color */
-}
-
-/* Set up the container to take up the full height of the page */
-.container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Full height of the screen */
-}
-
-/* Header Styling */
-header {
-    text-align: center;
-    padding: 20px;
-}
-
-header h1 {
-    margin: 10px 0;
-    font-size: var(--header-font-size); /* Use header font size variable */
-}
-
-header p {
-    font-size: var(--subheader-font-size); /* Use subheader font size variable */
-    color: #666;
-}
-
-/* Styling for the profile picture */
-.profile-pic {
-    width: 120px; /* Adjust size as needed */
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
-/* Links Section */
-.links {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.links a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    font-size: 20px;
-    color: var(--link-color); /* Apply link color */
-    margin: 12px 0;
-    padding: 8px 12px;
-    border-radius: 5px;
-    background-color: var(--link-bg-color); /* Apply link background color */
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.links a i {
-    margin-right: 10px; /* Space between icon and text */
-    font-size: var(--icon-size); /* Use icon size variable */
-}
-
-/* Hover effect on links */
-.links a:hover {
-    background-color: var(--link-hover-bg-color); /* Link hover background color */
-    color: var(--link-hover-color); /* Link hover text color */
-}
-
-.links a i:hover {
-    color: var(--link-hover-color); /* Icon hover color */
-}
-
-/* Footer Styling */
-.footer {
-    margin-top: auto; /* Push the footer to the bottom */
-    text-align: center;
-    background-color: var(--footer-background-color); /* Apply footer background color */
-    color: var(--footer-text-color); /* Apply footer text color */
-    padding: 10px;
-    font-size: var(--footer-font-size); /* Use footer font size variable */
-}
-
-/* Optional Styling for Footer Text */
-.footer p {
-    margin: 0;
-}
+    background-color: var(--background-color); /* Apply black background */
+    color: var(--text
