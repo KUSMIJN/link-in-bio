@@ -1,12 +1,12 @@
 /* Define variables for easy customization */
 :root {
-    --background-color: #f4f4f4; /* Page background color */
+    --background-color: #000000; /* Page background color */
     --text-color: #333; /* Main text color */
     --link-color: #007bff; /* Link color */
     --link-hover-color: #ffffff; /* Link hover text color */
-    --link-bg-color: #007bff; /* Link background color */
-    --link-hover-bg-color: #0056b3; /* Link hover background color */
-    --footer-background-color: #333; /* Footer background color */
+    --link-bg-color: #60042b; /* Link background color */
+    --link-hover-bg-color: #000000; /* Link hover background color */
+    --footer-background-color: #000000; /* Footer background color */
     --footer-text-color: #fff; /* Footer text color */
     --footer-font-size: 14px; /* Footer text size */
     --header-font-size: 36px; /* Header text size */
