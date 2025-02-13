@@ -1,95 +1,85 @@
-/* styles.css */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Ensure the page takes up at least 100% of the viewport height */
+html, body {
+    height: 100%; /* Makes sure the body takes full screen height */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set a clean font */
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #000000; /* Background color */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    color: #fff0f5;
-}
-
+/* Set up the container to take up the full height of the page */
 .container {
-    text-align: center;
-    max-width: 500px;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full height of the screen */
 }
 
+/* Header Styling */
 header {
-    margin-bottom: 30px;
+    text-align: center;
+    padding: 20px;
 }
 
+header h1 {
+    margin: 10px 0;
+    font-size: 36px; /* Adjust header size */
+}
+
+header p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Styling for the profile picture */
 .profile-pic {
+    width: 120px; /* Adjust size as needed */
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-    margin-bottom: 15px;
-}
-
-h1 {
-    font-size: 2rem;
     margin-bottom: 10px;
 }
 
-p {
-    font-size: 1rem;
-    margin-bottom: 20px;
-}
-
+/* Links Section */
 .links {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.link {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #540323;
-    color: #fff0f5;
-    text-decoration: none;
-    border-radius: 25px;
-    transition: background-color 0.3s ease;
-}
-
-.link:hover {
-    background-color: #000000;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .links a {
     display: flex;
     align-items: center;
+    justify-content: center;
     text-decoration: none;
-    color: #000;
-    font-size: 18px;
-    margin: 10px 0;
+    font-size: 20px;
+    color: #333;
+    margin: 12px 0;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .links a i {
-    margin-right: 8px;
-    font-size: 20px;
-    color: #555;
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 24px; /* Icon size */
 }
 
-@media (max-width: 768px) {
-    .profile-pic {
-        width: 100px;
-        height: 100px;
-    }
-    
-    h1 {
-        font-size: 1.8rem;
-    }
-    
-    .link {
-        font-size: 1rem;
-        padding: 8px 16px;
-    }
+/* Hover effect on links */
+.links a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.links a i:hover {
+    color: white; /* Icon changes color on hover */
+}
+
+/* Footer Styling */
+.footer {
+    margin-top: auto; /* Push the footer to the bottom */
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Optional Styling for Footer Text */
+.footer p {
+    margin: 0;
 }
