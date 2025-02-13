@@ -1,14 +1,14 @@
 /* Define variables for easy customization */
 :root {
-    --background-color: #000000; /* Page background color */
-    --text-color: #fef0f6; /* Main text color */
-    --link-color: #fef0f6; /* Link color */
-    --link-hover-color: #fef0f6; /* Link hover text color */
-    --link-bg-color: #820339; /* Link background color */
-    --link-hover-bg-color: #000000; /* Link hover background color */
-    --footer-background-color: #000000; /* Footer background color */
-    --footer-text-color: #fef0f6; /* Footer text color */
-    --footer-font-size: 12px; /* Footer text size */
+    --background-color: #f4f4f4; /* Page background color */
+    --text-color: #333; /* Main text color */
+    --link-color: #007bff; /* Link color */
+    --link-hover-color: #ffffff; /* Link hover text color */
+    --link-bg-color: #007bff; /* Link background color */
+    --link-hover-bg-color: #0056b3; /* Link hover background color */
+    --footer-background-color: #333; /* Footer background color */
+    --footer-text-color: #fff; /* Footer text color */
+    --footer-font-size: 14px; /* Footer text size */
     --header-font-size: 36px; /* Header text size */
     --subheader-font-size: 18px; /* Subheader text size */
     --icon-size: 24px; /* Icon size */
@@ -48,4 +48,57 @@ header p {
 
 /* Styling for the profile picture */
 .profile-pic {
-   
+    width: 120px; /* Adjust size as needed */
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Links Section */
+.links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--link-color); /* Apply link color */
+    margin: 12px 0;
+    padding: 8px 12px;
+    border-radius: 5px;
+    background-color: var(--link-bg-color); /* Apply link background color */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.links a i {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: var(--icon-size); /* Use icon size variable */
+}
+
+/* Hover effect on links */
+.links a:hover {
+    background-color: var(--link-hover-bg-color); /* Link hover background color */
+    color: var(--link-hover-color); /* Link hover text color */
+}
+
+.links a i:hover {
+    color: var(--link-hover-color); /* Icon hover color */
+}
+
+/* Footer Styling */
+.footer {
+    margin-top: auto; /* Push the footer to the bottom */
+    text-align: center;
+    background-color: var(--footer-background-color); /* Apply footer background color */
+    color: var(--footer-text-color); /* Apply footer text color */
+    padding: 10px;
+    font-size: var(--footer-font-size); /* Use footer font size variable */
+}
+
+/* Optional Styling for Footer Text */
+.footer p {
+    margin: 0;
+}
