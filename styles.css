@@ -29,7 +29,6 @@ html, body {
     color: var(--text-color);
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Push footer to the bottom */
 }
 
 /* Container for all content */
@@ -41,6 +40,7 @@ html, body {
     text-align: center;
     padding: 20px;
     flex-grow: 1; /* Allow container to expand and take remaining space */
+    min-height: 100vh; /* Ensures the content takes at least full height of the page */
 }
 
 /* Profile Picture Styling */
@@ -85,5 +85,42 @@ header p {
     margin: 12px 0;
     font-size: 18px;
     transition: background-color 0.3s, color 0.3s;
-    width: 100%; /* Make sure the button takes full width */
-   
+}
+
+.links a i {
+    font-size: var(--icon-size);
+    margin-right: 10px;
+}
+
+/* Hover Effect */
+.links a:hover {
+    background-color: var(--link-hover-bg-color);
+}
+
+/* Footer Section */
+.footer {
+    width: 100%;
+    text-align: center;
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+    padding: 15px;
+    font-size: var(--footer-font-size);
+}
+
+/* Optional: Styling for footer text */
+.footer p {
+    margin: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .links a {
+        font-size: 16px; /* Slightly smaller text on smaller screens */
+        padding: 8px 12px;
+    }
+
+    .profile-pic {
+        width: 100px; /* Adjust profile pic size on smaller screens */
+        height: 100px;
+    }
+}
