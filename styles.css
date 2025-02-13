@@ -1,21 +1,128 @@
-/* Define variables for easy customization */
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Prevent layout issues with padding and borders */
+}
+
+/* Root Variables for Easy Customization */
 :root {
     --background-color: #000000; /* Black background */
-    --text-color: #f3e9ed; /* All text color */
+    --text-color: #f3e9ed; /* Text color */
     --link-color: #f3e9ed; /* Link text color */
     --link-bg-color: #60042b; /* Button color */
-    --link-hover-bg-color: #000000; /* Button hover background color (black) */
+    --link-hover-bg-color: #000000; /* Button hover background color */
     --footer-background-color: #333; /* Footer background color */
     --footer-text-color: #fff; /* Footer text color */
     --footer-font-size: 14px; /* Footer text size */
     --header-font-size: 36px; /* Header text size */
     --subheader-font-size: 18px; /* Subheader text size */
-    --icon-size: 24px; /* Icon size */
+    --icon-size: 20px; /* Icon size */
+    --profile-pic-size: 120px; /* Profile picture size */
 }
 
-/* Ensure the page takes up at least 100% of the viewport height */
+/* Body and Layout */
 html, body {
-    height: 100%; /* Makes sure the body takes full screen height */
-    margin: 0; /* Remove default margin */
-    font-family: Arial, sans-serif; /* Set a clean font */
-    background-color: var(--backgroun
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Push footer to the bottom */
+}
+
+/* Container for all content */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Profile Picture Styling */
+.profile-pic {
+    width: var(--profile-pic-size); /* Use variable for size */
+    height: var(--profile-pic-size); /* Ensure it's proportional */
+    border-radius: 50%;
+    margin-bottom: 20px; /* Space below the picture */
+}
+
+/* Header Section */
+header {
+    margin-bottom: 20px; /* Space between header and content */
+}
+
+header h1 {
+    font-size: var(--header-font-size);
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: var(--subheader-font-size);
+    color: #666;
+}
+
+/* Links Section */
+.links {
+    width: 100%;
+    max-width: 400px; /* Limit width for better alignment */
+    margin-top: 20px;
+}
+
+.links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--link-color);
+    background-color: var(--link-bg-color);
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 12px 0;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.links a i {
+    font-size: var(--icon-size);
+    margin-right: 10px;
+}
+
+/* Hover Effect */
+.links a:hover {
+    background-color: var(--link-hover-bg-color);
+}
+
+/* Footer Section */
+.footer {
+    width: 100%;
+    text-align: center;
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+    padding: 15px;
+    font-size: var(--footer-font-size);
+    position: relative;
+    bottom: 0;
+}
+
+/* Optional: Styling for footer text */
+.footer p {
+    margin: 0;
+}
+
+/* Responsiveness */
+@media (max-width: 600px) {
+    .links a {
+        font-size: 16px; /* Slightly smaller text on smaller screens */
+        padding: 8px 12px;
+    }
+
+    .profile-pic {
+        width: 100px; /* Adjust profile pic size on smaller screens */
+        height: 100px;
+    }
+}
