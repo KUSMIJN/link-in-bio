@@ -18,5 +18,4 @@ html, body {
     height: 100%; /* Makes sure the body takes full screen height */
     margin: 0; /* Remove default margin */
     font-family: Arial, sans-serif; /* Set a clean font */
-    background-color: var(--background-color); /* Apply black background */
-    color: var(--text
+    background-color: var(--backgroun
