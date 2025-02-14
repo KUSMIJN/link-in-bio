@@ -38,7 +38,9 @@ html, body {
   align-items: center;
   text-align: center;
   padding: 20px;
-  min-height: 100vh; /* Full viewport height on larger screens */
+  /* Use 100vh as a fallback, and 100dvh if supported (mobile friendly) */
+  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 /* Main content wrapper to push footer to the bottom */
@@ -92,8 +94,7 @@ header p {
 
 .links a i {
   font-size: var(--icon-size);
-  margin-right: 10px;
-  margin-left: 10px;
+  margin: 0 10px;
 }
 
 /* Hover Effect */
@@ -111,12 +112,11 @@ header p {
   font-size: var(--footer-font-size);
 }
 
-/* Optional: Styling for footer text */
 .footer p {
   margin: 0;
 }
 
-/* Responsiveness for mobile */
+/* Responsiveness for Mobile */
 @media (max-width: 600px) {
   .links a {
     font-size: 16px;
@@ -128,8 +128,8 @@ header p {
     height: 100px;
   }
   
-  /* Remove forced minimum height on mobile to prevent extra scrolling */
+  /* Optionally reduce container padding on mobile */
   .container {
-    min-height: auto;
+    padding: 10px;
   }
 }
