@@ -90,6 +90,7 @@ header p {
 .links a i {
     font-size: var(--icon-size);
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 /* Hover Effect */
