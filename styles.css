@@ -23,7 +23,7 @@
 
 /* Body and Layout */
 html, body {
-  height: 100%; /* Full screen height */
+  height: 100%;
   font-family: Arial, sans-serif;
   background-color: var(--background-color);
   color: var(--text-color);
@@ -38,7 +38,7 @@ html, body {
   align-items: center;
   text-align: center;
   padding: 20px;
-  min-height: 100vh; /* Ensures the container spans the full viewport height */
+  min-height: 100vh; /* Full viewport height on larger screens */
 }
 
 /* Main content wrapper to push footer to the bottom */
@@ -105,7 +105,7 @@ header p {
 .footer {
   width: 100%;
   text-align: center;
-  background-color: #000000;
+  background-color: var(--footer-background-color);
   color: var(--footer-text-color);
   padding: 15px;
   font-size: var(--footer-font-size);
@@ -116,7 +116,7 @@ header p {
   margin: 0;
 }
 
-/* Responsiveness */
+/* Responsiveness for mobile */
 @media (max-width: 600px) {
   .links a {
     font-size: 16px;
@@ -126,5 +126,10 @@ header p {
   .profile-pic {
     width: 100px;
     height: 100px;
+  }
+  
+  /* Remove forced minimum height on mobile to prevent extra scrolling */
+  .container {
+    min-height: auto;
   }
 }
