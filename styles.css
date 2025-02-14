@@ -12,8 +12,8 @@
   --link-color: #f3e9ed;             /* Link text color */
   --link-bg-color: #60042b;          /* Button color */
   --link-hover-bg-color: #000000;    /* Button hover background color */
-  --footer-background-color: #333;   /* Footer background color */
-  --footer-text-color: #fff;         /* Footer text color */
+  --footer-background-color: #000000;   /* Footer background color */
+  --footer-text-color: #f3e9ed;         /* Footer text color */
   --footer-font-size: 14px;          /* Footer text size */
   --header-font-size: 36px;          /* Header text size */
   --subheader-font-size: 18px;       /* Subheader text size */
