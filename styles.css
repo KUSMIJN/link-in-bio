@@ -105,7 +105,7 @@ header p {
 .footer {
   width: 100%;
   text-align: center;
-  background-color: var(--footer-background-color);
+  background-color: #000000;
   color: var(--footer-text-color);
   padding: 15px;
   font-size: var(--footer-font-size);
